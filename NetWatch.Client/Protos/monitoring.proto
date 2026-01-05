@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package LatencyMonitor;
+
+// The service definition.
+service NetworkMonitor {
+  // A stream that sends updates continuously
+  rpc StreamLatencies (EmptyRequest) returns (stream PingUpdate);
+}
+
+message EmptyRequest {}
+
+message PingUpdate {
+  string target_name = 1;   // e.g. "Google DNS"
+  int32 latency_ms = 2;     // e.g. 14
+  string status_color = 3;  // e.g. "#00FF00" (Green)
+  string timestamp = 4;     // Time of ping
+}

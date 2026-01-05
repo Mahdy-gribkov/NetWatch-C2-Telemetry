@@ -1,0 +1,36 @@
+# =========================
+# .NET / C# Build Files
+# =========================
+# Ignore the build output directories (heavy and redundant)
+[Bb]in/
+[Oo]bj/
+
+# User-specific configurations (not for shared repo)
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+
+# Visual Studio / VS Code cache and settings
+.vs/
+.vscode/
+
+# =========================
+# Python Files
+# =========================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments (if you create one later)
+venv/
+env/
+.env/
+.venv/
+
+# =========================
+# Operating System Files
+# =========================
+.DS_Store
+Thumbs.db
